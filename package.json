@@ -1,0 +1,16 @@
+{
+  "name": "umt-sync",
+  "version": "1.0.0",
+  "description": "CLI tool to sync course materials, track tasks, and submit assignments on UMT Lahore Moodle LMS.",
+  "type": "module",
+  "scripts": {
+    "sync": "node sync.mjs",
+    "submit": "node submit.mjs"
+  },
+  "dependencies": {
+    "googleapis": "^187.0.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
