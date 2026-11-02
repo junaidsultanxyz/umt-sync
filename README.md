@@ -102,4 +102,4 @@ If a teacher shares a Google Drive folder or restricts a link strictly to `@umt.
 - **Some information might be missed:** If an instructor announces a task purely as plain text inside a lecture slide or discussion message without creating a Moodle Assignment box or uploading an `Assignment` file, it will not have a submission box in `submit.mjs`.
 - **Locked/Past-Due Submissions:** If an instructor disables late submissions on Moodle (`canedit = false`), `submit.mjs` cannot bypass Moodle's server-side lock.
 - **File Size Cap:** Files larger than `50 MB` are skipped by default during sync (configurable via `maxFileSizeMB` in `sync.mjs`).
-- **Images Excluded by Design:** Decorative course images (`.png`, `.jpg`, `.svg`, etc.) and template `Mid Term` placeholders are automatically ignored.
+- **Images Excluded by Design:** Decorative course images (`.png`, `.jpg`, `.svg`, etc.) and template placeholders are automatically ignored.

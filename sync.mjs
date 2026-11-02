@@ -199,14 +199,8 @@ function cleanupMaterialFolder() {
           }
         }
       } else if (entry.isFile()) {
-        // Keep the 3 checklist markdown files inside material/
-        if (
-          dir === CONFIG.materialDir &&
-          ["assignments.md", "quizzes.md", "labtasks.md"].includes(entry.name)
-        ) {
-          continue;
-        }
-        if (isSkippedFilename(entry.name)) {
+        // Only remove unwanted Mid Term / Final Term template files; keep existing images
+        if (IGNORED_FILE_NAME_REGEX.test(entry.name)) {
           try {
             fs.rmSync(fullPath, { force: true });
             console.log(
